@@ -52,7 +52,7 @@ Example setup (PowerShell):
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-pip install pandas numpy matplotlib scikit-learn jupyter
+pip install -r requirements.txt
 ```
 
 ## CureQuest Track
@@ -85,6 +85,5 @@ Default local API: `http://127.0.0.1:5001`
 
 ## Next Improvements
 
-- Add a root-level `requirements.txt` (or separate environment files) for notebook dependencies.
 - Add notebook run instructions with expected outputs for each day.
 - Add tests for the CureQuest API and matching logic.
