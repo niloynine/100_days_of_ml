@@ -74,12 +74,15 @@ Validation error response:
 
 ## Local Setup
 
-### 1. Clone repository
+### 1. Open the CureQuest folder
+
+If you are working from the parent repository (`100_days_of_ml`):
 
 ```bash
-git clone https://github.com/niloynine/curequest.git
 cd curequest
 ```
+
+If you copied this folder as a standalone project, open this directory in your terminal first.
 
 ### 2. Create virtual environment
 
