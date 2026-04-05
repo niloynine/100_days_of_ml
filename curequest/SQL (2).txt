@@ -1,0 +1,93 @@
+CREATE DATABASE curequest;
+USE curequest;
+
+
+CREATE TABLE Symptom (
+    symptom_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    description TEXT
+);
+
+
+CREATE TABLE Disease (
+    disease_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    description TEXT
+);
+
+
+CREATE TABLE Test (
+    test_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    description TEXT,
+    result_type ENUM('presence', 'numeric') NOT NULL
+);
+
+CREATE TABLE Medicine (
+    medicine_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    description TEXT,
+    dosage VARCHAR(100)
+);
+
+
+CREATE TABLE Disease_Symptom (
+    disease_id INT,
+    symptom_id INT,
+    FOREIGN KEY (disease_id) REFERENCES Disease(disease_id),
+    FOREIGN KEY (symptom_id) REFERENCES Symptom(symptom_id),
+    PRIMARY KEY (disease_id, symptom_id)
+);
+
+
+CREATE TABLE Disease_Test (
+  disease_id INT,
+  test_id INT,
+  FOREIGN KEY (disease_id) REFERENCES Disease(disease_id),
+  FOREIGN KEY (test_id) REFERENCES Test(test_id),
+  PRIMARY KEY (disease_id, test_id)
+);
+
+
+
+CREATE TABLE Disease_Medicine (
+    disease_id INT,
+    medicine_id INT,
+    FOREIGN KEY (disease_id) REFERENCES Disease(disease_id),
+    FOREIGN KEY (medicine_id) REFERENCES Medicine(medicine_id),
+    PRIMARY KEY (disease_id, medicine_id)
+);
+
+CREATE TABLE Symptom_Test (
+  symptom_id INT,
+  test_id INT,
+  FOREIGN KEY (symptom_id) REFERENCES Symptom(symptom_id),
+  FOREIGN KEY (test_id) REFERENCES Test(test_id),
+  PRIMARY KEY (symptom_id, test_id)
+);
+
+
+CREATE TABLE Test_Reference_Ranges (
+    range_id INT PRIMARY KEY AUTO_INCREMENT,
+    test_id INT NOT NULL,
+    gender ENUM('male', 'female', 'both') NOT NULL DEFAULT 'both',
+    age_group ENUM('child','adult') NOT NULL,
+    min_value FLOAT,
+    max_value FLOAT,
+    FOREIGN KEY (test_id) REFERENCES Test(test_id),
+ CONSTRAINT chk_min_max CHECK (min_value IS NULL OR max_value IS NULL OR min_value <= max_value)
+);
+
+CREATE TABLE Medicine_Dosage (
+    dosage_id INT PRIMARY KEY AUTO_INCREMENT,
+    medicine_id INT NOT NULL,
+    age_group ENUM('child','adult') NOT NULL,
+    dosage VARCHAR(100) NOT NULL,
+    strength VARCHAR(50) NOT NULL,
+    
+    -- Foreign key constraint
+    FOREIGN KEY (medicine_id) REFERENCES Medicine(medicine_id) ON DELETE CASCADE ON UPDATE CASCADE,
+    
+    -- Unique constraint to prevent duplicate entries
+    UNIQUE KEY unique_dosage (medicine_id, age_group, strength)
+);

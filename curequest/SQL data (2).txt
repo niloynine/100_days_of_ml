@@ -1,0 +1,635 @@
+INSERT INTO Disease (disease_id, name, description) VALUES
+(1, 'Common Cold', 'A mild viral infection of the upper respiratory tract, causing sneezing, congestion, and sore throat.'),
+(2, 'Migraine', 'A neurological condition marked by intense, throbbing headaches often accompanied by nausea and sensitivity to light or sound.'),
+(3, 'Chickenpox', 'A highly contagious viral infection causing an itchy rash and red spots or blisters all over the body.'),
+(4, 'Measles', 'A contagious viral disease with symptoms including fever, cough, runny nose, inflamed eyes, and a skin rash.'),
+(5, 'Conjunctivitis', 'An inflammation or infection of the transparent membrane lining the eyelid and eyeball, often called pink eye.'),
+(6, 'Tension Headache', 'A common type of headache characterized by a dull, aching sensation and tightness around the head.'),
+(7, 'Gastroenteritis', 'An intestinal infection marked by diarrhea, cramps, nausea, vomiting, and fever.'),
+(8, 'Scabies', 'A skin infestation caused by a mite, resulting in intense itching and a pimple-like skin rash.'),
+(9, 'Motion Sickness', 'A condition where repeated motion causes dizziness, nausea, and imbalance.'),
+(10, 'Insomnia', 'A sleep disorder where individuals have trouble falling or staying asleep.'),
+(11, 'Strep Throat', 'A bacterial infection that causes inflammation and pain in the throat.'),
+(12, 'Anemia', 'A condition in which the blood doesn’t have enough healthy red blood cells to carry adequate oxygen to tissues.'),
+(13, 'Allergic Rhinitis', 'An allergic response causing sneezing, congestion, and runny nose, often triggered by pollen or dust.'),
+(14, 'Bacterial Conjunctivitis', 'A bacterial infection of the conjunctiva, leading to redness, swelling, and discharge from the eyes.'),
+(15, 'Diabetes Type 2', 'A chronic condition that affects how the body processes blood sugar (glucose).'),
+(16, 'Urinary Tract Infection (UTI)', 'An infection in any part of the urinary system — kidneys, bladder, or urethra.'),
+(17, 'Leukemia', 'Cancer of the blood-forming tissues, hindering the body’s ability to fight infection.'),
+(18, 'Thalassemia', 'An inherited blood disorder causing the body to produce an abnormal form of hemoglobin.'),
+(19, 'Iron Deficiency Anemia', 'A condition in which the blood lacks adequate healthy red blood cells due to insufficient iron.'),
+(20, 'Dengue Fever', 'A mosquito-borne viral infection causing severe flu-like illness and sometimes bleeding.'),
+(21, 'Malaria', 'A serious disease spread by mosquitoes causing fever, chills, and flu-like illness.'),
+(22, 'Typhoid Fever', 'A bacterial infection due to Salmonella typhi, often spread through contaminated food or water.'),
+(23, 'Sepsis', 'A potentially life-threatening condition caused by the body’s response to an infection.'),
+(24, 'Lymphoma', 'A group of blood cancers that develop in the lymphatic system.'),
+(25, 'Hemophilia', 'A rare disorder in which the blood doesn’t clot normally due to a lack of clotting factors.'),
+(26, 'Sickle Cell Disease', 'An inherited group of disorders where red blood cells become misshapen and can block blood flow.');
+
+
+INSERT INTO Symptom (symptom_id, name, description) VALUES
+(1, 'Runny Nose', 'Excess nasal drainage, often a clear fluid.'),
+(2, 'Sneezing', 'Sudden, forceful expulsion of air from the lungs through the nose and mouth.'),
+(3, 'Sore Throat', 'Pain or irritation in the throat.'),
+(4, 'Headache', 'Pain in any region of the head.'),
+(5, 'Nausea', 'Uneasy feeling often preceding vomiting.'),
+(6, 'Vomiting', 'Forceful expulsion of stomach contents through the mouth.'),
+(7, 'Fever', 'Elevated body temperature, often a sign of infection.'),
+(8, 'Rash', 'Noticeable change in skin color or texture.'),
+(9, 'Itching', 'Uncomfortable sensation causing the urge to scratch.'),
+(10, 'Red Eyes', 'Inflammation or infection leading to red or bloodshot eyes.'),
+(11, 'Eye Discharge', 'Fluid that comes from the eyes.'),
+(12, 'Blurred Vision', 'Lack of sharpness of vision.'),
+(13, 'Abdominal Pain', 'Pain felt anywhere in the area between the chest and groin.'),
+(14, 'Diarrhea', 'Frequent loose or watery bowel movements.'),
+(15, 'Fatigue', 'Feeling of tiredness or lack of energy.'),
+(16, 'Muscle Aches', 'Pain or soreness in the muscles.'),
+(17, 'Cough', 'A sudden expulsion of air from the lungs.'),
+(18, 'Joint Pain', 'Discomfort from inflammation or injury in joints.'),
+(19, 'Irritability', 'Feeling of agitation or frustration.'),
+(20, 'Restlessness', 'Inability to stay still or relaxed.'),
+(21, 'Difficulty Sleeping', 'Problems with falling or staying asleep.'),
+(22, 'Frequent Urination', 'Need to urinate more often than usual.'),
+(23, 'Burning Urination', 'Pain or burning feeling during urination.'),
+(24, 'Weight Loss', 'Unintentional reduction in body weight.'),
+(25, 'Night Sweats', 'Excessive sweating during sleep.'),
+(26, 'Pale Skin', 'Skin that is lighter than normal.'),
+(27, 'Shortness of Breath', 'Difficulty in breathing.'),
+(28, 'Dizziness', 'Feeling of being lightheaded or unbalanced.'),
+(29, 'Swollen Lymph Nodes', 'Enlarged glands in the neck, armpit, or groin.'),
+(30, 'Bleeding Easily', 'Unusual or excessive bleeding.'),
+(31, 'Cold Hands and Feet', 'Extremities feel cold due to poor blood flow.'),
+(32, 'Chest Pain', 'Pain or discomfort in the chest area.'),
+(33, 'Seizures', 'Sudden, uncontrolled electrical disturbances in the brain.'),
+(34, 'Yellow Skin or Eyes', 'Jaundice caused by liver dysfunction.'),
+(35, 'Loss of Appetite', 'Lack of desire to eat.'),
+(36, 'Swollen Joints', 'Enlargement of joints due to inflammation.'),
+(37, 'Delayed Healing', 'Slow recovery from wounds or infections.'),
+(38, 'Sensitivity to Light', 'Discomfort or pain in the eyes due to light exposure.'),
+(39, 'Visual Disturbances', 'Changes in vision such as flashes or blind spots.'),
+(40, 'Chills', 'Feeling cold with shivering.'),
+(41, 'Confusion', 'Disorientation or trouble thinking clearly.'),
+(42, 'Nasal Congestion', 'Blocked nose due to swollen nasal tissues.'),
+(43, 'Dry Mouth', 'Insufficient saliva leading to dryness.'),
+(44, 'Back Pain', 'Pain in the rear part of the body between the neck and pelvis.'),
+(45, 'Excessive Thirst', 'Increased need to drink fluids.');
+
+INSERT INTO Test (test_id, name, description, result_type) VALUES
+(1, 'Throat Culture', 'Detects bacterial infections like strep throat.', 'presence'),
+(2, 'Complete Blood Count (CBC)', 'Measures blood components.', 'numeric'),
+(3, 'Urinalysis', 'Examines urine.', 'numeric'),
+(4, 'Blood Sugar Test', 'Diagnoses diabetes.', 'numeric'),
+(5, 'Hemoglobin Electrophoresis', 'Detects abnormal hemoglobin.', 'numeric'),
+(6, 'Iron Studies', 'Measures body iron.', 'numeric'),
+(7, 'Dengue NS1 Antigen Test', 'Detects dengue early.', 'presence'),
+(8, 'Dengue IgM/IgG Antibody Test', 'Confirms dengue.', 'presence'),
+(9, 'Malaria Smear Test', 'Detects malaria parasites.', 'presence'),
+(10, 'Widal Test', 'Diagnoses typhoid.', 'numeric'),
+(11, 'Blood Culture', 'Detects sepsis pathogens.', 'presence'),
+(12, 'Lymph Node Biopsy', 'Diagnoses lymphoma.', 'presence'),
+(13, 'Clotting Factor Assay', 'Measures clotting proteins.', 'numeric'),
+(14, 'Conjunctival Swab', 'Confirms conjunctivitis.', 'presence'),
+(15, 'Allergy Skin Test', 'Identifies allergens.', 'numeric');
+
+
+INSERT INTO Medicine (medicine_id, name, dosage) VALUES
+(1, 'Paracetamol', '500 mg every 6 hours as needed'),
+(2, 'Ibuprofen', '400 mg every 6–8 hours as needed'),
+(3, 'Acyclovir', '800 mg 5 times daily for 5 days'),
+(4, 'Vitamin A', '200,000 IU orally for 2 days'),
+(5, 'Antihistamine Eye Drops', '1-2 drops in affected eye twice daily'),
+(6, 'Amitriptyline', '10–25 mg at bedtime'),
+(7, 'ORS Solution', '1 sachet after each loose stool'),
+(8, 'Permethrin Cream', 'Apply once over the body, repeat after 7 days'),
+(9, 'Meclizine', '25 mg 1 hour before travel'),
+(10, 'Zolpidem', '5–10 mg at bedtime'),
+(11, 'Amoxicillin', '500 mg 3 times daily for 10 days'),
+(12, 'Ferrous Sulfate', '325 mg once or twice daily'),
+(13, 'Loratadine', '10 mg once daily'),
+(14, 'Metformin', '500 mg twice daily'),
+(15, 'Nitrofurantoin', '100 mg twice daily for 5 days'),
+(16, 'Chemotherapy Regimen', 'As per oncologist protocol'),
+(17, 'Folic Acid', '1 mg daily'),
+(18, 'Paracetamol + IV fluids', 'As required for fever and hydration'),
+(19, 'Artemether-Lumefantrine', '20/120 mg twice daily for 3 days'),
+(20, 'Ciprofloxacin', '500 mg twice daily for 7–14 days'),
+(21, 'IV Antibiotics', 'Administered under hospital supervision'),
+(22, 'R-CHOP Regimen', 'Administered in cycles, supervised by oncologist'),
+(23, 'Desmopressin (DDAVP)', '0.3 mcg/kg IV infusion'),
+(24, 'Hydroxyurea', '15–20 mg/kg once daily'),
+(25, 'Erythromycin Ophthalmic Ointment', 'Apply 1 cm ribbon to eye up to 6x daily'),
+(26, 'Glipizide', '5 mg once daily before breakfast'),
+(27, 'Insulin', 'Dose as per blood glucose levels'),
+(28, 'Trimethoprim-Sulfamethoxazole', '160/800 mg twice daily for 3–5 days'),
+(29, 'Quinine Sulfate', '600 mg every 8 hours for 7 days'),
+(30, 'Chloroquine', '600 mg initially, then 300 mg after 6 hours and on days 2 and 3'),
+(31, 'Meropenem', '1 g IV every 8 hours'),
+(32, 'Vancomycin', '15–20 mg/kg IV every 8–12 hours'),
+(33, 'Cyclophosphamide', 'Varies by regimen and weight'),
+(34, 'Methotrexate', 'Once weekly (dose varies)'),
+(35, 'Rituximab', '375 mg/m² IV weekly for 4 weeks'),
+(36, 'Ferrous Gluconate', '300 mg once or twice daily'),
+(37, 'Iron Sucrose', '100 mg IV 1–3 times/week'),
+(38, 'Acetaminophen (Pain Relief)', '500–1000 mg every 6 hours'),
+(39, 'Sumatriptan', '50–100 mg at onset of migraine');
+
+
+
+INSERT INTO Disease_Symptom (disease_id, symptom_id) VALUES
+-- 1. Common Cold
+(1, 1), (1, 2), (1, 3), (1, 17), (1, 42),
+
+-- 2. Migraine
+(2, 4), (2, 38), (2, 39), (2, 20),
+
+-- 3. Chickenpox
+(3, 7), (3, 8), (3, 4), (3, 15), (3, 35), (3, 17),
+
+-- 4. Measles
+(4, 7), (4, 1), (4, 3), (4, 10), (4, 8), (4, 38),
+
+-- 5. Conjunctivitis
+(5, 10), (5, 11), (5, 3),
+
+-- 6. Tension Headache
+(6, 4), (6, 16), (6, 20),
+
+-- 7. Gastroenteritis
+(7, 5), (7, 6), (7, 13), (7, 14), (7, 7),
+
+-- 8. Scabies
+(8, 9), (8, 8), (8, 19),
+
+-- 9. Motion Sickness
+(9, 5), (9, 6), (9, 28),
+
+-- 10. Insomnia
+(10, 21), (10, 20), (10, 15),
+
+-- 11. Strep Throat
+(11, 3), (11, 7), (11, 18), (11, 29), (11, 4),
+
+-- 12. Anemia (general)
+(12, 15), (12, 26), (12, 27), (12, 28), (12, 31), (12, 24),
+
+-- 13. Allergic Rhinitis
+(13, 1), (13, 2), (13, 42),
+
+-- 14. Bacterial Conjunctivitis
+(14, 10), (14, 11), (14, 3), (14, 7),
+
+-- 15. Diabetes Type 2
+(15, 22), (15, 45), (15, 15),
+
+-- 16. UTI
+(16, 22), (16, 23), (16, 7), (16, 13),
+
+-- 17. Leukemia
+(17, 15), (17, 26), (17, 24), (17, 25), (17, 29),
+
+-- 18. Thalassemia
+(18, 15), (18, 26), (18, 27), (18, 31), (18, 24),
+
+-- 19. Iron Deficiency Anemia
+(19, 15), (19, 26), (19, 27), (19, 31), (19, 24),
+
+-- 20. Dengue Fever
+(20, 7), (20, 4), (20, 16), (20, 5), (20, 14), (20, 8),
+
+-- 21. Malaria
+(21, 7), (21, 4), (21, 5), (21, 16), (21, 40), (21, 28), (21, 27),
+
+-- 22. Typhoid Fever
+(22, 7), (22, 4), (22, 13), (22, 14), (22, 15), (22, 24), (22, 8), (22, 17), (22, 16),
+
+-- 23. Sepsis
+(23, 7), (23, 41), (23, 15), (23, 28), (23, 32),
+
+-- 24. Lymphoma
+(24, 29), (24, 15), (24, 25), (24, 24), (24, 26),
+
+-- 25. Hemophilia
+(25, 30), (25, 36), (25, 18),
+
+-- 26. Sickle Cell Disease
+(26, 26), (26, 15), (26, 27), (26, 36), (26, 32);
+
+
+INSERT INTO Symptom_Test (symptom_id, test_id) VALUES
+-- Sore Throat → Throat Culture (for Strep Throat)
+(3, 1),
+
+-- Abdominal Pain → Widal Test (Typhoid suspicion)
+(13, 10),
+
+-- Painful Urination → Urinalysis (UTI)
+(23, 3),
+
+-- Increased Thirst → Blood Sugar Test (Diabetes)
+(22, 4),
+
+-- Eye Redness/Discharge → Conjunctival Swab (Bacterial Conjunctivitis)
+(10, 14),
+
+-- Fever → Dengue Tests (if in endemic area and with dengue symptoms)
+(7, 7),  -- NS1 Antigen
+(7, 8),  -- IgM/IgG Antibody
+
+-- Fever + Chills + Travel History → Malaria Smear
+(7, 9),
+
+-- High Fever → Widal Test (Typhoid)
+(7, 10),
+
+-- Fever + Weakness + Organ Failure Signs → Blood Culture (Sepsis)
+(7, 11),
+
+-- Pale Skin / Fatigue / Shortness of Breath → CBC or Iron Studies (Anemia suspicion)
+(15, 2),  -- Fatigue → CBC
+(26, 2),  -- Pale Skin → CBC
+(27, 2),  -- Shortness of Breath → CBC
+(26, 6),  -- Pale Skin → Iron Studies
+
+-- Swollen Lymph Nodes → Lymph Node Biopsy (Lymphoma)
+(18, 12),
+
+-- Bleeding Easily → Clotting Factor Assay (Hemophilia)
+(30, 13);
+
+
+
+INSERT INTO Medicine_Dosage (medicine_id, age_group, dosage, strength) VALUES
+-- 1. Paracetamol
+(1, 'child', '10-15 mg/kg every 4-6 hours as needed, max 5 doses/day', '120 mg/5 ml syrup'),
+(1, 'adult', '500-1000 mg every 4-6 hours as needed, max 4 g/day', '500 mg tablet'),
+
+-- 2. Ibuprofen
+(2, 'child', '5-10 mg/kg every 6-8 hours as needed, max 40 mg/kg/day', '100 mg/5 ml syrup'),
+(2, 'adult', '200-400 mg every 6-8 hours as needed, max 1200 mg/day OTC', '400 mg tablet'),
+
+-- 3. Acyclovir
+(3, 'child', '20 mg/kg/dose every 8 hours for 5 days', '200 mg tablet'),
+(3, 'adult', '800 mg 5 times daily for 5 days', '800 mg tablet'),
+
+-- 4. Vitamin A
+(4, 'child', '100,000 IU once, repeat after 4-6 weeks (6-11 months)', '100,000 IU capsule'),
+(4, 'adult', '200,000 IU orally for 2 days', '200,000 IU capsule'),
+
+-- 5. Antihistamine Eye Drops (e.g. Olopatadine)
+(5, 'child', '1 drop twice daily in affected eye(s)', '0.1% eye drops'),
+(5, 'adult', '1-2 drops twice daily in affected eye(s)', '0.1% eye drops'),
+
+-- 6. Amitriptyline
+(6, 'child', 'Not commonly recommended for children', '10 mg tablet'),
+(6, 'adult', '10-25 mg at bedtime, titrate as needed', '25 mg tablet'),
+
+-- 7. ORS Solution
+(7, 'child', '1 sachet dissolved in 200 ml water after each loose stool', 'ORS sachet'),
+(7, 'adult', '1 sachet dissolved in 1 L water, drink as needed', 'ORS sachet'),
+
+-- 8. Permethrin Cream (for scabies)
+(8, 'child', 'Apply once over the body; repeat after 7 days if needed', '5% cream'),
+(8, 'adult', 'Apply once over the body; repeat after 7 days if needed', '5% cream'),
+
+-- 9. Meclizine
+(9, 'child', 'Not recommended under 12 years', '25 mg tablet'),
+(9, 'adult', '25 mg 1 hour before travel', '25 mg tablet'),
+
+-- 10. Zolpidem
+(10, 'child', 'Not recommended for children', '5 mg tablet'),
+(10, 'adult', '5-10 mg at bedtime', '10 mg tablet'),
+
+-- 11. Amoxicillin
+(11, 'child', '20-40 mg/kg/day divided every 8 hours', '125 mg/5 ml suspension'),
+(11, 'adult', '500 mg every 8 hours for 7-10 days', '500 mg capsule'),
+
+-- 12. Ferrous Sulfate
+(12, 'child', '3-6 mg/kg elemental iron daily in divided doses', '60 mg elemental iron tablet'),
+(12, 'adult', '325 mg (65 mg elemental iron) once or twice daily', '325 mg tablet'),
+
+-- 13. Loratadine
+(13, 'child', '5 mg once daily (2-12 years)', '5 mg syrup'),
+(13, 'adult', '10 mg once daily', '10 mg tablet'),
+
+-- 14. Metformin
+(14, 'child', 'Not routinely used under 10 years', '500 mg tablet'),
+(14, 'adult', '500 mg twice daily, titrate dose', '500 mg tablet'),
+
+-- 15. Nitrofurantoin
+(15, 'child', '5-7 mg/kg/day in divided doses', '25 mg/5 ml suspension'),
+(15, 'adult', '100 mg twice daily for 5 days', '100 mg capsule'),
+
+-- 16. Chemotherapy Regimen
+(16, 'child', 'Dose varies by protocol and weight', 'As per oncologist protocol'),
+(16, 'adult', 'Dose varies by protocol and weight', 'As per oncologist protocol'),
+
+-- 17. Folic Acid
+(17, 'child', '0.5-1 mg daily', '1 mg tablet'),
+(17, 'adult', '1 mg daily', '1 mg tablet'),
+
+-- 18. Paracetamol + IV fluids
+(18, 'child', 'Paracetamol 10-15 mg/kg every 4-6 hours; IV fluids as per hydration status', 'Paracetamol syrup/IV fluids'),
+(18, 'adult', '500-1000 mg every 4-6 hours; IV fluids as needed', 'Paracetamol tablet/IV fluids'),
+
+-- 19. Artemether-Lumefantrine
+(19, 'child', 'Weight-based dosing, e.g., 5-14 kg: 1 tablet twice daily for 3 days', '20/120 mg tablet'),
+(19, 'adult', '20/120 mg twice daily for 3 days', '20/120 mg tablet'),
+
+-- 20. Ciprofloxacin
+(20, 'child', '20-30 mg/kg/day divided every 12 hours (use with caution)', '250 mg tablet'),
+(20, 'adult', '500 mg twice daily for 7-14 days', '500 mg tablet'),
+
+-- 21. IV Antibiotics
+(21, 'child', 'Dose depends on antibiotic and weight', 'Administered under hospital supervision'),
+(21, 'adult', 'Dose depends on antibiotic and infection', 'Administered under hospital supervision'),
+
+-- 22. R-CHOP Regimen
+(22, 'child', 'Dose varies; oncologist supervision required', 'As per protocol'),
+(22, 'adult', 'Dose varies; oncologist supervision required', 'As per protocol'),
+
+-- 23. Desmopressin (DDAVP)
+(23, 'child', '0.3 mcg/kg IV infusion as needed', '0.3 mcg/kg IV'),
+(23, 'adult', '0.3 mcg/kg IV infusion as needed', '0.3 mcg/kg IV'),
+
+-- 24. Hydroxyurea
+(24, 'child', '15-20 mg/kg once daily', '500 mg capsule'),
+(24, 'adult', '15-20 mg/kg once daily', '500 mg capsule'),
+
+-- 25. Erythromycin Ophthalmic Ointment
+(25, 'child', 'Apply 1 cm ribbon to eye up to 6 times daily', '0.5% ointment'),
+(25, 'adult', 'Apply 1 cm ribbon to eye up to 6 times daily', '0.5% ointment'),
+
+-- 26. Glipizide
+(26, 'child', 'Not routinely used in children', '5 mg tablet'),
+(26, 'adult', '5 mg once daily before breakfast', '5 mg tablet'),
+
+-- 27. Insulin
+(27, 'child', 'Dose individualized based on blood glucose', 'Units per insulin protocol'),
+(27, 'adult', 'Dose individualized based on blood glucose', 'Units per insulin protocol'),
+
+-- 28. Trimethoprim-Sulfamethoxazole
+(28, 'child', '8 mg TMP/kg/day divided every 12 hours', '160/800 mg tablet'),
+(28, 'adult', '160/800 mg twice daily for 3-5 days', '160/800 mg tablet'),
+
+-- 29. Quinine Sulfate
+(29, 'child', '10 mg/kg every 8 hours for 7 days', '300 mg tablet'),
+(29, 'adult', '600 mg every 8 hours for 7 days', '300 mg tablet'),
+
+-- 30. Chloroquine
+(30, 'child', '10 mg/kg initially, then 5 mg/kg after 6 hrs, days 2 and 3', '150 mg tablet'),
+(30, 'adult', '600 mg initially, then 300 mg after 6 hours and on days 2 and 3', '150 mg tablet'),
+
+-- 31. Meropenem
+(31, 'child', '20-40 mg/kg every 8 hours IV', '1 g vial'),
+(31, 'adult', '1 g IV every 8 hours', '1 g vial'),
+
+-- 32. Vancomycin
+(32, 'child', '15 mg/kg every 6 hours IV', '500 mg vial'),
+(32, 'adult', '15-20 mg/kg every 8-12 hours IV', '500 mg vial'),
+
+-- 33. Cyclophosphamide
+(33, 'child', 'Dose varies by regimen', 'Varies by protocol'),
+(33, 'adult', 'Dose varies by regimen', 'Varies by protocol'),
+
+-- 34. Methotrexate
+(34, 'child', 'Once weekly dose varies by indication', 'Varies'),
+(34, 'adult', 'Once weekly dose varies by indication', 'Varies'),
+
+-- 35. Rituximab
+(35, 'child', '375 mg/m² IV weekly for 4 weeks', '375 mg/m² vial'),
+(35, 'adult', '375 mg/m² IV weekly for 4 weeks', '375 mg/m² vial'),
+
+-- 36. Ferrous Gluconate
+(36, 'child', '6 mg/kg elemental iron daily in divided doses', '300 mg tablet'),
+(36, 'adult', '300 mg once or twice daily', '300 mg tablet'),
+
+-- 37. Iron Sucrose
+(37, 'child', '100 mg IV 1-3 times/week', '100 mg vial'),
+(37, 'adult', '100 mg IV 1-3 times/week', '100 mg vial'),
+
+-- 38. Acetaminophen (Pain Relief)
+(38, 'child', '10-15 mg/kg every 4-6 hours as needed, max 5 doses/day', '120 mg/5 ml syrup'),
+(38, 'adult', '500-1000 mg every 4-6 hours as needed, max 4 g/day', '500 mg tablet'),
+
+-- 39. Sumatriptan
+(39, 'child', 'Not recommended under 12 years', '50 mg tablet'),
+(39, 'adult', '50-100 mg at onset of migraine', '50 mg tablet');
+
+
+INSERT INTO Disease_Test (disease_id, test_id) VALUES
+-- Strep Throat
+(11, 1),     -- Throat Culture
+
+-- Anemia
+(12, 2),     -- CBC
+
+-- Leukemia
+(17, 2),     -- CBC
+
+-- UTI
+(16, 3),     -- Urinalysis
+
+-- Diabetes Type 2
+(15, 4),     -- Blood Sugar Test
+
+-- Thalassemia
+(18, 5),     -- Hemoglobin Electrophoresis
+
+-- Sickle Cell Disease
+(26, 5),     -- Hemoglobin Electrophoresis
+
+-- Iron Deficiency Anemia
+(19, 6),     -- Iron Studies
+
+-- Dengue Fever
+(20, 7),     -- NS1 Antigen
+(20, 8),     -- IgM/IgG Antibody
+
+-- Malaria
+(21, 9),     -- Malaria Smear
+
+-- Typhoid Fever
+(22, 10),    -- Widal Test
+
+-- Sepsis
+(23, 11),    -- Blood Culture
+
+-- Lymphoma
+(24, 12),    -- Lymph Node Biopsy
+
+-- Hemophilia
+(25, 13),    -- Clotting Factor Assay
+
+-- Bacterial Conjunctivitis
+(14, 14),    -- Conjunctival Swab
+
+-- Allergic Rhinitis
+(13, 15);    -- Allergy Skin Test
+
+INSERT INTO Test_Reference_Ranges (test_id, gender, age_group, min_value, max_value) VALUES
+-- Throat Culture (presence-based, no numeric range)
+(1, 'both', 'child', NULL, NULL),
+(1, 'both', 'adult', NULL, NULL),
+
+-- CBC - Hemoglobin (example range for total hemoglobin)
+(2, 'male', 'adult', 13.5, 17.5),
+(2, 'female', 'adult', 12.0, 15.5),
+(2, 'both', 'child', 11.0, 13.5),
+
+-- Urinalysis - WBC count (per HPF)
+(3, 'both', 'adult', 0, 5),
+(3, 'both', 'child', 0, 5),
+
+-- Blood Sugar (Fasting)
+(4, 'both', 'adult', 70, 99),
+(4, 'both', 'child', 70, 100),
+
+-- Hemoglobin Electrophoresis (% of HbA)
+(5, 'both', 'adult', 95, 98),
+(5, 'both', 'child', 95, 98),
+
+-- Iron Studies - Serum Iron (mcg/dL)
+(6, 'male', 'adult', 65, 176),
+(6, 'female', 'adult', 50, 170),
+(6, 'both', 'child', 50, 120),
+
+-- Dengue NS1 Antigen Test (presence)
+(7, 'both', 'adult', NULL, NULL),
+(7, 'both', 'child', NULL, NULL),
+
+-- Dengue IgM/IgG Antibodies (presence)
+(8, 'both', 'adult', NULL, NULL),
+(8, 'both', 'child', NULL, NULL),
+
+-- Malaria Smear Test (presence)
+(9, 'both', 'adult', NULL, NULL),
+(9, 'both', 'child', NULL, NULL),
+
+-- Widal Test - significant titer >= 1:160 (simplified)
+(10, 'both', 'adult', 0, 160),
+(10, 'both', 'child', 0, 160),
+
+-- Blood Culture (presence of pathogen)
+(11, 'both', 'adult', NULL, NULL),
+(11, 'both', 'child', NULL, NULL),
+
+-- Lymph Node Biopsy (abnormal cells presence)
+(12, 'both', 'adult', NULL, NULL),
+(12, 'both', 'child', NULL, NULL),
+
+-- Clotting Factor Assay - Factor VIII (% activity)
+(13, 'both', 'adult', 50, 150),
+(13, 'both', 'child', 50, 150),
+
+-- Conjunctival Swab (pathogen presence)
+(14, 'both', 'adult', NULL, NULL),
+(14, 'both', 'child', NULL, NULL),
+
+-- Allergy Skin Test - wheal size in mm
+(15, 'both', 'adult', 0, 3),
+(15, 'both', 'child', 0, 3);
+
+
+INSERT INTO Disease_Medicine (disease_id, medicine_id) VALUES
+-- Common Cold
+(1, 1),  -- Paracetamol
+(1, 13), -- Loratadine
+
+-- Migraine
+(2, 2),  -- Ibuprofen
+(2, 39), -- Sumatriptan
+
+-- Chickenpox
+(3, 3),  -- Acyclovir
+(3, 1),  -- Paracetamol
+
+-- Measles
+(4, 4),  -- Vitamin A
+(4, 1),  -- Paracetamol
+
+-- Conjunctivitis (Viral)
+(5, 5),  -- Antihistamine Eye Drops
+
+-- Tension Headache
+(6, 2),  -- Ibuprofen
+(6, 6),  -- Amitriptyline
+
+-- Gastroenteritis
+(7, 7),  -- ORS Solution
+(7, 1),  -- Paracetamol
+
+-- Scabies
+(8, 8),  -- Permethrin Cream
+
+-- Motion Sickness
+(9, 9),  -- Meclizine
+
+-- Insomnia
+(10, 10), -- Zolpidem
+(10, 6),  -- Amitriptyline
+
+-- Strep Throat
+(11, 11), -- Amoxicillin
+(11, 1),  -- Paracetamol
+
+-- Anemia
+(12, 12), -- Ferrous Sulfate
+(12, 17), -- Folic Acid
+
+-- Allergic Rhinitis
+(13, 13), -- Loratadine
+
+-- Bacterial Conjunctivitis
+(14, 25), -- Erythromycin Ophthalmic Ointment
+
+-- Diabetes Type 2
+(15, 14), -- Metformin
+(15, 26), -- Glipizide
+(15, 27), -- Insulin
+
+-- UTI
+(16, 15), -- Nitrofurantoin
+(16, 28), -- Trimethoprim-Sulfamethoxazole
+
+-- Leukemia
+(17, 16), -- Chemotherapy Regimen
+(17, 31), -- Meropenem
+(17, 32), -- Vancomycin
+
+-- Thalassemia
+(18, 17), -- Folic Acid
+
+-- Iron Deficiency Anemia
+(19, 12), -- Ferrous Sulfate
+(19, 36), -- Ferrous Gluconate
+(19, 37), -- Iron Sucrose
+
+-- Dengue Fever
+(20, 18), -- Paracetamol + IV fluids
+
+-- Malaria
+(21, 19), -- Artemether-Lumefantrine
+(21, 29), -- Quinine Sulfate
+(21, 30), -- Chloroquine
+
+-- Typhoid Fever
+(22, 20), -- Ciprofloxacin
+
+-- Sepsis
+(23, 21), -- IV Antibiotics
+(23, 31), -- Meropenem
+(23, 32), -- Vancomycin
+
+-- Lymphoma
+(24, 22), -- R-CHOP Regimen
+(24, 33), -- Cyclophosphamide
+(24, 34), -- Methotrexate
+(24, 35), -- Rituximab
+
+-- Hemophilia
+(25, 23), -- Desmopressin (DDAVP)
+
+-- Sickle Cell Disease
+(26, 24), -- Hydroxyurea
+(26, 1);  -- Paracetamol
+
